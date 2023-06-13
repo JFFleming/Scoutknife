@@ -22,7 +22,7 @@ while ($number <= $iteration) {
 	for ((shuffle(0..$dir_length-1))[1..$looptime]) {
     	print OUT "$fasta_list[$_] \n";
 	}
-	system "/home/jamesfl/catsequences/catsequences $dir/Jack_knifelist.$number.txt";
+	system "catsequences $dir/Jack_knifelist.$number.txt";
 	system "mkdir $dir/ScoutKnife_$number";
 	system "mv allseqs.fas $dir/ScoutKnife_$number/$number.allseqs.fas";
 	system "mv allseqs.partitions.txt $dir/ScoutKnife_$number/$number.allseqs.partitions.txt";	
