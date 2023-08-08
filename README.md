@@ -18,3 +18,7 @@ The manuscript for Scoutknife is currently under peer review at F1000 Research. 
 
 https://f1000research.com/articles/12-945
 
+
+Included is also a Taxon Probability Calculator, as mentioned in the manuscript. This file (Scoutknife_TaxonProbCalculator.pl) might be useful to understand how to sample your data.
+It takes as input a series of standard input questions: How many genes are in your dataset, how many of those genes contain the least represented taxa, how large you would like your Scoutknife sample to be and how many genes would you like to represent the least represented taxa in each sample.
+It outputs the probability of that being the case. By increasing the number of sampled genes in the Scoutknife sample, you can increase the real number of genes representing your least represented taxa that appear in the average Scoutknife sample. However, it is worth noting that this will not increase the proportional representation of the least represented taxa in the sample. 
