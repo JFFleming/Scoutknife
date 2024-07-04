@@ -6,7 +6,7 @@ Scoutknife takes as input a directory of fasta files. Each of those fasta files 
 Format a Scoutknife.pl command as follows:
 
 ``
-perl Scutknife.pl <directory name> <sample alignment size> <Number of iterations>
+perl Scoutknife.pl <directory name> <sample alignment size> <Number of iterations>
 ``
 
 For Example
