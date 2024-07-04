@@ -51,7 +51,7 @@ if ($ARGV[0] =~ "--auto"){
 	chomp( $dir = $ARGV[1] ); # . here is the input for the current directory
 	opendir (DIR, $dir)|| die ("Can not open $dir");
 	#!/usr/bin/perl
-	@fasta_list = grep { /\.fas/i && !/^\./ } readdir(DIR);
+	@fasta_list = grep { /\.fa/i ||/\.fst/i && !/^\./ } readdir(DIR);
 	closedir(DIR);
 
 	# Initialize variables
